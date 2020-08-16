@@ -13,7 +13,7 @@ async def _(event):
     while True:
         LT = datetime.datetime.now(pytz.timezone('Asia/Kolkata'))
         OT = LT.strftime("%H:%M")
-        name = f"№𝙳𝚎𝚡𝚝𝚎𝚛[{OT}]~$"    
+        name = f"𝙳𝚎𝚡𝚝𝚎𝚛[{OT}]~$"    
         await bot(UpdateProfileRequest(first_name=name))
         await asyncio.sleep(60)
 
